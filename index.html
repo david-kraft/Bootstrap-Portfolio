@@ -1,39 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>About Me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- jQuery CDN -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
 
     <!-- Popper.js CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
 
     <!-- Bootstrap CDN -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- Local external stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>About Me</title>
 
 </head>
+
 <body>
+    <!-- Universal Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">David Kraft</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">About Me<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="portfolio.html">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-          </ul>
+        <!-- Centers, gives x margin to box of content -->
+        <div class="container mx-auto px-3" <a class="navbar-brand" href="#">David Kraft</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">About Me
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </nav>
+    </nav>
+
+    <!-- Main section vertical outer section with subtle background -->
+    <div class="container-fluid subtle-background">
+
+        <!-- Centers, gives x & y margin to box of content -->
+        <div class="container mx-auto p-3">
+
+            <!-- Page-specific content -->
+            <div class="row">
+                <div class="col-12 col-md-8 float-md-left">
+                    <h3 class="border border-top-0 border-right-0  border-left-0 pb-2 pm-2">About Me</h3>
+                    <img class="img-fluid rounded float-md-left mr-1 mb-1" src="assets/images/david-kraft-profile.jpg" alt="Profile Image">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum cursus nunc risus, nec suscipit magna
+                        varius id. Vestibulum nec velit arcu. Sed cursus felis auctor, imperdiet risus ut, ullamcorper sapien.
+                        Ut sed libero fermentum, ultricies magna sed, porttitor orci. Nullam feugiat enim eget eros maximus,
+                        vel vulputate elit facilisis. In egestas odio libero, in molestie nisi maximus nec. Ut dignissim
+                        massa quis turpis interdum malesuada sed a tortor. Aliquam nec ipsum sodales, luctus diam vel, ultricies
+                        magna. Sed non mollis nisl, sit amet commodo metus. In aliquam sed purus vel fermentum. Curabitur
+                        sapien enim, facilisis in molestie non, tincidunt at tortor.</p>
+
+                    <p>Morbi iaculis metus sit amet sodales hendrerit. Class aptent taciti sociosqu ad litora torquent per conubia
+                        nostra, per inceptos himenaeos. In porttitor scelerisque mollis. Nullam mattis tincidunt finibus.
+                        In hac habitasse platea dictumst. Aliquam erat volutpat. Fusce ac consequat elit. In elementum condimentum
+                        facilisis. Cras augue eros, porttitor nec efficitur nec, gravida in dui. Suspendisse scelerisque
+                        eget urna at rutrum. Donec pellentesque elit eu libero lobortis, vel tempor justo rutrum. Cras ut
+                        nisi accumsan, ultrices ipsum quis, interdum arcu. Curabitur tincidunt laoreet est, nec faucibus
+                        arcu. Mauris rutrum commodo hendrerit. Quisque egestas leo consectetur, cursus orci ac, pellentesque
+                        leo. Suspendisse ut posuere nibh.</p>
+
+                    <p>Suspendisse at interdum arcu. Curabitur semper sapien vitae vehicula efficitur. Nam arcu arcu, bibendum
+                        quis ligula et, vulputate auctor odio. Ut turpis ex, fringilla sed nisl id, convallis ultricies orci.
+                        Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin enim
+                        tortor, bibendum a lacinia eget, commodo non lacus. Vivamus vel molestie dui, non egestas odio. Proin
+                        lacinia augue vel tincidunt sollicitudin. Ut enim mauris, vehicula non fermentum ut, pharetra sit
+                        amet tellus. Suspendisse fermentum urna nec nibh pulvinar ornare. Etiam lobortis, est tristique dictum
+                        dictum, arcu nunc pretium massa, non convallis libero erat id ligula. Donec malesuada dignissim magna,
+                        eget volutpat felis convallis id. Vestibulum molestie enim magna, in mollis quam sagittis sed. Nunc
+                        congue laoreet massa id tempus.</p>
+
+                    <p>Mauris ipsum enim, malesuada id quam non, auctor tristique lorem. Aliquam erat volutpat. Proin eu metus
+                        non ligula maximus pharetra. Sed placerat volutpat blandit. Duis justo tellus, varius id urna eu,
+                        mollis venenatis odio. Curabitur vitae ante nisl. Morbi vulputate convallis libero sed accumsan.</p>
+
+                    <p>Aliquam ac sem eu tellus luctus consequat in ut felis. Nulla et dictum dolor, eu auctor augue. Cras sit
+                        amet turpis et neque congue blandit in sit amet enim. Sed iaculis, eros ac fermentum gravida, felis
+                        turpis blandit urna, a varius mi lorem eu ex. Fusce in malesuada est. Cras ac dolor tortor. Etiam
+                        mattis, erat quis sagittis iaculis, tellus erat iaculis turpis, quis tempor ligula orci a purus.
+                        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent
+                        tristique justo id tortor euismod feugiat. Integer fermentum viverra maximus. In cursus nunc vitae
+                        quam dapibus vehicula. Pellentesque sed lacus a tortor condimentum dapibus nec vel orci. Fusce at
+                        orci lorem. Praesent feugiat mi mi, eget porta nunc faucibus quis. Praesent lacus neque, viverra
+                        sed hendrerit eget, iaculis at erat. Maecenas et ante ut tortor hendrerit porta ac nec purus.</p>
+                </div>
+
+                <!-- Universal Sidebar -->
+                <div class="col-12 col-md-4 float-md-left">
+                    <div class="sidebar">
+                        <h4 class="border border-top-0 border-right-0  border-left-0 pb-2 pm-2">Connect with Me:</h4>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <a href="https://www.linkedin.com/in/dkraftmn/">LinkedIn</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="https://github.com/david-kraft">GitHub</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="https://stackoverflow.com/users/9542347/david-kraft?tab=profile">Stack Overflow</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <span class="text-muted">Copyright ©</span>
+        </div>
+    </footer>
 </body>
+
 </html>
